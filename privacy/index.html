@@ -55,14 +55,14 @@
         <p class="notice draft"><strong>Draft for owner review: not yet in effect.</strong> Items marked <span class="confirm">REQUIRES OWNER CONFIRMATION</span> must be completed, and the whole policy reviewed, before this page is published or linked from the stores or AdMob.</p>
 
         <p class="meta">
-          Effective date: <span class="confirm">REQUIRES OWNER CONFIRMATION (set on publication)</span><br>
-          Last updated: 29 October 2026 (draft)
+          Effective date: 13 November 2026<br>
+          Last updated: 13 November 2026 (draft)
         </p>
 
         <div class="notice" role="note">
           <p><strong>Current status.</strong> SORTVERSE is not yet available on Google Play or the App Store. This policy explains how the app will handle information when it is released, and what happens today:</p>
           <ul>
-            <li><strong>Arena:</strong> in development. It runs only in our test builds, on a development server, and is not open to the public.</li>
+            <li><strong>Arena:</strong> in controlled internal testing on a development server. It is not open to the public.</li>
             <li><strong>Ads:</strong> the app is built to offer optional rewarded videos from Google AdMob. Test builds use Google's test ads only; no live ads are shown.</li>
             <li><strong>This website:</strong> a static site with no cookies, analytics or ads (see section 15).</li>
           </ul>
@@ -95,7 +95,7 @@
         <ul>
           <li><strong>Developer and data controller:</strong> Saad El Fadil, an individual developer</li>
           <li><strong>Country:</strong> Morocco</li>
-          <li><strong>CNDP declaration:</strong> <span class="confirm">REQUIRES OWNER CONFIRMATION: receipt reference of the declaration to Morocco's CNDP (Law No. 09-08, art. 5(1)(d)), or legal advice that none is required for this processing</span></li>
+          <li><strong>CNDP (Morocco):</strong> <span class="confirm">REQUIRES OWNER CONFIRMATION: Morocco's Law No. 09-08 on the protection of personal data (Art. 5) requires data controllers established in Morocco to declare processing operations to the CNDP before they begin. The developer's current view is that no declaration is required for SORTVERSE's processing, but this has not been confirmed by qualified legal advice. This item is a legal-review blocker: resolution requires either a declaration reference, a written legal opinion confirming an applicable exemption, or qualified confirmation that the processing falls outside the law's scope.</span></li>
           <li><strong>Contact:</strong> <a href="mailto:saadelfadil18@gmail.com">saadelfadil18@gmail.com</a> (support, privacy questions and deletion requests)</li>
         </ul>
         <p>In this policy, “we” and “us” mean the developer named above.</p>
@@ -151,6 +151,8 @@
           <li><strong>Technical data:</strong> when the app talks to the Arena, Supabase processes connection data such as your IP address and request details to provide, secure and rate-limit the service.</li>
         </ul>
         <p>Your saved game, coins, rewards, hints, attempts, settings and ad activity are never sent to the Arena.</p>
+        <h3>How availability is controlled</h3>
+        <p>Arena availability is controlled by a server-side configuration that can be changed without an app update. Access moves through defined stages — from internal testing to limited release to public — and includes an emergency shutdown option that can pause the Arena in response to a safety or operational incident. The app checks this configuration before allowing any write to the leaderboard. If the Arena is paused or not yet available in your stage, the rest of the game is never affected.</p>
         <p>If you reinstall the app or move to a new phone, the old anonymous identity can't be recovered from the app. Its profile stays until it's deleted (see <a href="#deletion">section 10</a>).</p>
 
         <h2 id="ads">5. Ads and consent (Google AdMob)</h2>
@@ -214,9 +216,14 @@
             </tbody>
           </table>
         </div>
-        <p>Legal basis: <span class="confirm">REQUIRES OWNER CONFIRMATION: legal basis for answering emails and hosting this website, which applies from publication</span></p>
+        <p><strong>Proposed legal bases</strong> <span class="confirm">REQUIRES OWNER CONFIRMATION: proposed bases below are subject to legal confirmation before this policy takes effect.</span></p>
+        <ul>
+          <li>Responding to support emails: <strong>legitimate interests</strong> in providing the help you requested.</li>
+          <li>Responding to statutory privacy and deletion rights requests: <strong>legal obligation</strong> under applicable data-protection law.</li>
+          <li>Website hosting by Vercel: <strong>legitimate interests</strong> in maintaining a functional, secure informational website.</li>
+        </ul>
 
-        <h3>The mobile app (not yet released)</h3>
+        <h3>The mobile app (in internal testing; not yet publicly released)</h3>
         <div class="table-scroll">
           <table>
             <thead><tr><th scope="col">Purpose</th><th scope="col">Data</th></tr></thead>
@@ -228,7 +235,14 @@
             </tbody>
           </table>
         </div>
-        <p>The legal bases applicable to SORTVERSE's mobile-app data processing will be specified in this policy before the mobile application is publicly released.</p>
+        <p><strong>Proposed legal bases</strong> <span class="confirm">REQUIRES OWNER CONFIRMATION: proposed bases below are subject to legal confirmation before the app is publicly released.</span></p>
+        <ul>
+          <li>Arena participation: <strong>performance of a contract</strong> (or steps taken at your request prior to entering one) — the Arena service is set up specifically because you chose to join it.</li>
+          <li>Arena moderation and abuse prevention: <strong>legitimate interests</strong> in preventing abuse, maintaining fair play, and protecting other users, subject to necessity and proportionality.</li>
+          <li>AdMob in regions where consent is required (EEA, UK, Switzerland): <strong>consent</strong>, obtained through Google's consent tool before any personalised ad request is made.</li>
+          <li>AdMob processing that may occur without consent under applicable law (such as fraud prevention or contextual signals): <strong>legitimate interests</strong>; the precise scope is defined by Google's disclosures.</li>
+          <li>Responding to data-subject rights requests, deletion and required recordkeeping: <strong>legal obligation</strong>.</li>
+        </ul>
 
         <h2 id="retention">9. How long we keep data</h2>
         <ul>
