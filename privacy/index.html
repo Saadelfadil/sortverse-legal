@@ -54,14 +54,14 @@
       <article class="doc">
         <p class="meta">
           Effective date: 18 November 2026<br>
-          Last updated: 18 November 2026
+          Last updated: 21 November 2026
         </p>
 
         <div class="notice" role="note">
-          <p><strong>Current status.</strong> SORTVERSE 1.0 for iPhone is being prepared for release on the App Store and is not yet available to download. There is no Google Play version yet.</p>
+          <p><strong>Current status.</strong> SORTVERSE 1.0 is being prepared for release on the App Store (iPhone) and on Google Play (Android, starting with a closed test for invited testers). It is not yet publicly available to download.</p>
           <ul>
-            <li><strong>Arena:</strong> optional, offered in the iPhone app and hosted in the European Union (see <a href="#transfers">section 13</a>).</li>
-            <li><strong>Ads:</strong> the iPhone app offers optional rewarded videos from Google AdMob, shown only when you choose to watch one.</li>
+            <li><strong>Arena:</strong> optional, offered in both the iPhone and Android apps as one shared leaderboard, and hosted in the European Union (see <a href="#transfers">section 13</a>).</li>
+            <li><strong>Ads:</strong> the iPhone and Android apps offer optional rewarded videos from Google AdMob, shown only when you choose to watch one.</li>
             <li><strong>This website:</strong> a static site with no cookies, analytics or ads (see section 15).</li>
           </ul>
           <p style="margin-bottom:0">We will update this policy before any of this changes.</p>
@@ -89,7 +89,7 @@
         </nav>
 
         <h2 id="who">1. Who we are</h2>
-        <p>SORTVERSE is a puzzle game for iPhone. It is not yet available for Android; we will update this policy before an Android version is released. This policy covers the SORTVERSE app and this website.</p>
+        <p>SORTVERSE is a puzzle game for iPhone and Android. This policy covers both versions of the app and this website. Both apps offer the same game, the same optional rewarded videos and the same optional online Arena. Where they differ, for example in how the app is checked when you join the Arena or how advertising identifiers work, this policy says so.</p>
         <ul>
           <li><strong>Developer and data controller:</strong> Saad El Fadil, an individual developer</li>
           <li><strong>Country:</strong> Morocco</li>
@@ -105,9 +105,9 @@
             <thead><tr><th scope="col">Part of the app</th><th scope="col">What happens to your information</th></tr></thead>
             <tbody>
               <tr><td>Playing the game</td><td>Your progress, coins, settings and nickname are stored <strong>only on your device</strong>. We don't receive them.</td></tr>
-              <tr><td>SORTVERSE Arena</td><td><strong>Optional.</strong> Only if you tap “Join Arena”: an anonymous online identity (no email or password) and a public profile with your Arena name, avatar, highest level, world badges and the time you reached that level.</td></tr>
-              <tr><td>Rewarded video ads</td><td><strong>Optional.</strong> Shown only when you choose to watch one. Google AdMob collects data to serve and measure ads, subject to the consent choices you make where consent is required.</td></tr>
-              <tr><td>Accounts, purchases, analytics</td><td>None. There are no sign-up accounts, no in-app purchases and no analytics tools in the app.</td></tr>
+              <tr><td>SORTVERSE Arena</td><td><strong>Optional, on iPhone and Android.</strong> Only if you tap “Join Arena”: an anonymous online identity (no email or password) and a public profile with your Arena name, avatar, highest level, world badges and the time you reached that level.</td></tr>
+              <tr><td>Rewarded video ads</td><td><strong>Optional to watch.</strong> A video plays only when you choose to watch one. When the app starts, Google's consent tool checks with Google whether consent is required where you are. Once ads may be requested (straight away where consent isn't required, or after you've made your choices where it is, if Google's consent tool then allows ad requests), Google AdMob's software in the app collects data, such as your IP address, app interactions, diagnostics and device identifiers, and shares it with Google to serve, measure and protect ads. This can happen even if you never watch a video, because the app loads one in the background (see section 5).</td></tr>
+              <tr><td>Accounts, purchases, analytics</td><td>Playing needs no account, and there is no email or password registration. Joining the optional Arena creates an anonymous account (see section 4), which you can delete at any time with <strong>Leave &amp; delete</strong> (see section 10). There are no subscriptions, no in-app purchases and no analytics tools in the app.</td></tr>
             </tbody>
           </table>
         </div>
@@ -124,10 +124,10 @@
           <li>if you join the Arena: your Arena state and the sign-in session for your anonymous Arena identity;</li>
           <li>if you are asked for ad consent: the choices you make, which Google's consent tool stores on your device.</li>
         </ul>
-        <p>This information is not sent to us. Your nickname is not published unless you choose it as your Arena name. Deleting the app (or clearing its data in your phone's settings) deletes this information from the device. Your phone's own backup features, such as iCloud Backup, may include app data in backups held by Apple under your account and its terms.</p>
+        <p>This information is not sent to us. Your nickname is not published unless you choose it as your Arena name. Deleting the app (or clearing its data in your phone's settings) deletes this information from the device. Your phone's own backup features, such as iCloud Backup on iPhone or Google's backup on Android, may include app data in backups held by Apple or Google under your account and its terms.</p>
 
         <h2 id="arena">4. SORTVERSE Arena (optional)</h2>
-        <p>The Arena is an optional, casual community leaderboard, offered in the iPhone app. We open it in stages and only after its anti-abuse and moderation safeguards have been verified (see “How availability is controlled” below).</p>
+        <p>The Arena is an optional, casual community leaderboard, offered in both the iPhone and Android apps. Players on both share one leaderboard. Everything in this section applies to both apps, except how the app is checked when you join (App Attest on iPhone, Google Play Integrity on Android; see below). We open it in stages and only after its anti-abuse and moderation safeguards have been verified (see “How availability is controlled” below).</p>
         <p>Nothing is sent to the Arena unless you tap <strong>Join Arena</strong>, and you can play every level without it.</p>
         <h3>What joining creates</h3>
         <ul>
@@ -143,6 +143,8 @@
         </ul>
         <h3>Checking that the app is genuine (iPhone)</h3>
         <p>To keep automated fake accounts out of the Arena, joining uses Apple's <strong>App Attest</strong> service. Your iPhone creates a key in its secure hardware, and Apple certifies that the request comes from a genuine copy of SORTVERSE. Our server checks Apple's certificate and gives the app a single-use join ticket. We keep only the random single-use challenge and a one-way fingerprint (hash) of the ticket, and delete them about a day after they expire. We don't store the key, Apple's certificate or any device identifier. Apple's part is covered by the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</p>
+        <h3>Checking that the app is genuine (Android)</h3>
+        <p>On Android, joining uses Google's <strong>Play Integrity</strong> service for the same purpose. The app asks Google Play for an integrity verdict tied to a random single-use challenge from our server. Google checks that the request comes from a genuine copy of SORTVERSE installed from Google Play, on a device that passes Google's integrity checks, and returns an encrypted verdict. Our server asks Google to decrypt the verdict, checks it, and gives the app a single-use join ticket. As on iPhone, we keep only the random single-use challenge and a one-way fingerprint (hash) of the ticket, and delete them about a day after they expire. We don't store the verdict or any device identifier, and we don't log them. If Google's checks fail, for example on some modified or emulated devices, you can't join the Arena; the rest of the game works normally. Google's part is covered by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
         <p>Other players who have joined the Arena can see the public profile on the leaderboard (top 100). Arena progress is self-reported by the app and isn't verified.</p>
         <h3>Information that isn't public</h3>
         <ul>
@@ -161,16 +163,18 @@
         <p>SORTVERSE offers <strong>optional rewarded video ads</strong>: for example, a short video for a hint. A video plays only when you tap a clearly labelled button. There are no banner, pop-up or app-open ads.</p>
         <p>The ads are provided by <strong>Google AdMob</strong>.</p>
         <ul>
-          <li><strong>Consent check at launch:</strong> each time the app starts, Google's consent tool contacts Google to check whether consent is required where you are.</li>
-          <li><strong>Background loading:</strong> where ads may be requested, the app loads one video in the background so it's ready when you want it. A video still plays only when you tap.</li>
+          <li><strong>Consent check at launch:</strong> each time the app starts, Google's consent tool contacts Google to check whether consent is required where you are and, where it is, whether you've already made your choices. This sends technical information, such as your IP address, to Google. The app doesn't request any ad unless this check has succeeded, so if it can't complete (for example, when you're offline), no ad is requested.</li>
+          <li><strong>When ads may be requested:</strong> Google's ad software is started, and ads are requested, only once the consent tool indicates that ads may be requested: straight away where consent isn't required, or, where consent is required, only after you've made your choices and Google's consent tool then allows ad requests (see “Your consent choices” below).</li>
+          <li><strong>Background loading:</strong> once ads may be requested, the app loads one video in the background when it starts, so it's ready when you want it. A video still plays only when you tap. Because of this, Google's ad software collects the information below even if you never watch a video. You can't switch this background loading off inside the app, but your consent choices and device settings limit how Google may use the information (see below).</li>
         </ul>
         <p>When the app requests or shows an ad, Google's software collects information to deliver, measure and protect ads. According to Google's disclosures, this can include:</p>
         <ul>
           <li>your IP address, which may be used to estimate your general location;</li>
           <li>interactions with ads and the app, such as app launches, taps and video views;</li>
           <li>diagnostic and performance information;</li>
-          <li>device identifiers: the advertising identifier (on iPhone, only if you allow tracking; see below), or identifiers limited to one app or one developer, which Google says may be used for advertising and analytics.</li>
+          <li>device identifiers: the advertising identifier (on iPhone, only if you allow tracking; on Android, unless you've deleted it; see below), or identifiers limited to one app or one developer, which Google says may be used for advertising and analytics.</li>
         </ul>
+        <p><strong>This information is shared with Google.</strong> Google's ad software in the app sends it directly to Google. Google is not acting only on our behalf here: according to Google's disclosures, it uses this information for advertising, analytics and fraud prevention, including for its own purposes. App-store privacy summaries describe this as data “shared” with a third party. We don't receive individual players' data from Google through AdMob's reporting: AdMob gives us aggregated reports about ad performance, such as how many ads were shown and the revenue they earned. We don't use a separate analytics service in the app.</p>
         <p>Google uses this information as described in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
         <h3>Your consent choices</h3>
         <ul>
@@ -178,7 +182,7 @@
           <li>In those regions, the app does not request ads from Google until you've made your choices. After that, Google decides which ads, if any, it can show based on your choices and its policies. For example, if you don't consent, it may show only limited or non-personalised ads, or none. The rest of the game is never affected.</li>
           <li>When it applies, you can change your choices at any time in the app: <strong>Settings → Privacy options</strong>.</li>
         </ul>
-        <h3>Tracking and advertising identifiers</h3>
+        <h3>Tracking and advertising identifiers on iPhone</h3>
         <ul>
           <li><strong>Apple's tracking permission:</strong> the first time you tap an optional video, and only after any consent choices required where you are, iOS asks whether SORTVERSE may track you (App Tracking Transparency). It asks once.</li>
           <li><strong>If you tap Allow:</strong> Google's ad software may use your iPhone's advertising identifier (IDFA) to show you more relevant ads and to measure them, which can involve data from other companies' apps and websites.</li>
@@ -186,12 +190,19 @@
           <li>You can change your answer at any time in <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
           <li>Even without the IDFA, Google's software can use identifiers limited to one app or one developer to deliver, measure and protect ads, as described in Google's disclosures.</li>
         </ul>
+        <h3>Advertising identifiers on Android</h3>
+        <ul>
+          <li><strong>No tracking prompt:</strong> Android has no equivalent of Apple's tracking permission, and the app doesn't show one.</li>
+          <li><strong>Advertising ID:</strong> Google's ad software may use your device's advertising ID to show ads, including personalised ads where your consent choices and Google's policies allow, and to measure them. This can involve data from other companies' apps and websites.</li>
+          <li><strong>Your control:</strong> you can delete your advertising ID at any time in your phone's settings (on most phones, <strong>Settings → Privacy → Ads</strong>, or <strong>Settings → Google → Ads</strong>). Once it's deleted, apps can no longer use it for ads. Videos and rewards work the same either way.</li>
+          <li>Google's software can also use an app set ID, limited to apps from the same developer, and other identifiers limited to one app, to deliver, measure and protect ads, as described in Google's disclosures.</li>
+        </ul>
         <p>Ads in SORTVERSE are limited to content Google rates as suitable for general audiences with parental guidance (PG) or below.</p>
 
         <h2 id="not">6. What we don't do</h2>
         <ul>
           <li>We don't sell your personal information for money.</li>
-          <li>If you allow tracking (see section 5), Google may use your data for personalised advertising across other companies' apps and websites. Some US state laws call this “sharing” for cross-context behavioural advertising. You can stop it at any time by choosing <strong>Ask App Not to Track</strong>, or in <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
+          <li>If you allow tracking on iPhone, or keep your advertising ID on Android (see section 5), Google may use your data for personalised advertising across other companies' apps and websites. Some US state laws call this “sharing” for cross-context behavioural advertising. You can stop it at any time: on iPhone, choose <strong>Ask App Not to Track</strong> or use <strong>Settings → Privacy &amp; Security → Tracking</strong>; on Android, delete your advertising ID in your phone's settings. Where consent applies, you can also change your choices in <strong>Settings → Privacy options</strong> in the app.</li>
           <li>We don't ask for your email, phone number, real name, contacts, photos, camera, microphone or precise location.</li>
           <li>We don't use analytics or crash-reporting services in the app. (Google's ad software collects its own diagnostic data; see section 5.)</li>
           <li>We don't offer in-app purchases. Sort Coins can't be bought and have no cash value.</li>
@@ -203,12 +214,14 @@
             <thead><tr><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Their policy</th></tr></thead>
             <tbody>
               <tr><td>Supabase, Inc.</td><td>Hosting, database and anonymous sign-in for the optional Arena</td><td><a href="https://supabase.com/privacy" rel="noopener">Supabase Privacy Policy</a></td></tr>
-              <tr><td>Apple (App Attest)</td><td>Confirming that Arena joins come from a genuine copy of the iPhone app</td><td><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a></td></tr>
-              <tr><td>Google (AdMob and its consent tool)</td><td>Optional rewarded ads and ad consent</td><td><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></td></tr>
+              <tr><td>Apple (App Attest, iPhone only)</td><td>Confirming that Arena joins come from a genuine copy of the iPhone app</td><td><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a></td></tr>
+              <tr><td>Google (Play Integrity, Android only)</td><td>Confirming that Arena joins come from a genuine copy of the Android app installed from Google Play</td><td><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></td></tr>
+              <tr><td>Google (AdMob and its consent tool)</td><td>Optional rewarded ads and ad consent. Google also uses the ad data it collects for its own purposes (see section 5), so it is not only a service provider for this data.</td><td><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></td></tr>
               <tr><td>Namecheap, Inc.</td><td>Forwarding emails sent to our @sortverse.site addresses to our mailbox</td><td><a href="https://www.namecheap.com/legal/general/privacy-policy/" rel="noopener">Namecheap Privacy Policy</a></td></tr>
               <tr><td>Google (Gmail)</td><td>Receiving and answering support and privacy emails</td><td><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></td></tr>
               <tr><td>Vercel Inc.</td><td>Hosting this website</td><td><a href="https://vercel.com/legal/privacy-notice" rel="noopener">Vercel Privacy Notice</a></td></tr>
               <tr><td>Apple (App Store)</td><td>Distributing the app (Apple's own terms and policies apply to your Apple account)</td><td><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a></td></tr>
+              <tr><td>Google Play</td><td>Distributing the Android app (Google's own terms and policies apply to your Google account)</td><td><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></td></tr>
             </tbody>
           </table>
         </div>
@@ -238,7 +251,7 @@
             <tbody>
               <tr><td>Running the Arena you chose to join</td><td>Anonymous user ID, Arena name, avatar, level, badges, times</td></tr>
               <tr><td>Keeping the Arena safe and fair (rate limits, name filter, reports, moderation)</td><td>Name reports, moderation flag, update times</td></tr>
-              <tr><td>Keeping automated fake accounts out of the Arena (App Attest, sign-up limits)</td><td>Single-use challenges and ticket fingerprints; daily one-way codes of IP addresses</td></tr>
+              <tr><td>Keeping automated fake accounts out of the Arena (App Attest on iPhone, Play Integrity on Android, sign-up limits)</td><td>Single-use challenges and ticket fingerprints; daily one-way codes of IP addresses</td></tr>
               <tr><td>Operating and securing the Arena's servers</td><td>IP address and request details (Supabase logs); the sign-in session's IP address and user agent</td></tr>
               <tr><td>Offering optional rewarded ads, with consent where required</td><td>Data Google collects (see section 5)</td></tr>
             </tbody>
@@ -247,21 +260,23 @@
         <p><strong>Legal bases.</strong> Where the GDPR or the UK GDPR applies to you, we rely on:</p>
         <ul>
           <li>Running the Arena you chose to join (your anonymous identity and public profile): <strong>performance of a contract</strong>, the leaderboard service you asked for (Article 6(1)(b) GDPR).</li>
-          <li>Keeping fake accounts out and securing the servers (App Attest, sign-up and rate limits, server logs, sign-in sessions): <strong>legitimate interests</strong> in security and fraud prevention (Article 6(1)(f) GDPR).</li>
+          <li>Keeping fake accounts out and securing the servers (App Attest on iPhone, Play Integrity on Android, sign-up and rate limits, server logs, sign-in sessions): <strong>legitimate interests</strong> in security and fraud prevention (Article 6(1)(f) GDPR).</li>
           <li>Name filtering, reports and moderation: <strong>legitimate interests</strong> in protecting players and keeping the leaderboard fair (Article 6(1)(f) GDPR).</li>
           <li>Ads where consent is required (EEA, UK, Switzerland): <strong>consent</strong>, collected through Google's consent tool before any ad is requested. This covers storing and reading information on your device and, if you agree, personalised ads (Article 6(1)(a) GDPR and the ePrivacy rules). You can withdraw it in <strong>Settings → Privacy options</strong>.</li>
           <li>Use of your iPhone's advertising identifier: only with your permission through Apple's App Tracking Transparency (see section 5).</li>
+          <li>Use of your Android advertising ID: where consent is required, only as your consent choices allow; you can delete the ID at any time in your phone's settings (see section 5).</li>
           <li>Google decides how it processes ad data for its own purposes, as described in Google's policies.</li>
         </ul>
 
         <h2 id="retention">9. How long we keep data</h2>
         <ul>
           <li><strong>On your device:</strong> until you delete it, or delete or reset the app.</li>
+          <li><strong>Arena (iPhone and Android):</strong> the periods below apply to both apps.</li>
           <li><strong>Arena profile and anonymous identity:</strong> until you delete them (see <a href="#deletion">section 10</a>), or automatically once the profile hasn't been updated for <strong>12 months</strong>.</li>
           <li><strong>Anonymous identity without a public profile</strong> (you joined but never reached level 5): deleted automatically after <strong>30 days</strong>.</li>
           <li><strong>Name reports:</strong> deleted <strong>90 days</strong> after we've resolved them, or earlier when the reporting or reported profile is deleted.</li>
           <li><strong>Moderation records</strong> (such as hiding a name): <strong>12 months</strong>.</li>
-          <li><strong>App Attest challenges and ticket fingerprints:</strong> about a day after they expire. <strong>Rate-limit codes:</strong> 2 days.</li>
+          <li><strong>Join challenges and ticket fingerprints</strong> (App Attest on iPhone, Play Integrity on Android): about a day after they expire. Play Integrity verdicts aren't stored. <strong>Rate-limit codes:</strong> 2 days.</li>
           <li><strong>Exceptions:</strong> we may keep specific Arena records longer while we investigate abuse or a safety report, or where the law requires it, and delete them once that's finished.</li>
           <li><strong>Sign-in sessions:</strong> deleted together with your anonymous identity.</li>
           <li><strong>Server logs:</strong> kept by Supabase for a short period set by its service plan, then deleted automatically.</li>
@@ -273,8 +288,10 @@
 
         <h2 id="deletion">10. Deleting your data</h2>
         <ul>
-          <li><strong>Arena:</strong> in the app, open <strong>Arena → Arena settings → Leave &amp; delete online profile</strong>. This deletes your public profile, reports you made and reports about you, and your anonymous identity with its sessions. Full instructions, including what to do if you no longer have the app, are on the <a href="../account-deletion/">Account &amp; Data Deletion</a> page.</li>
+          <li><strong>Arena (iPhone and Android):</strong> in the app, open <strong>Arena → Arena settings → Leave &amp; delete online profile</strong>. This deletes your public profile, reports you made and reports about you, and your anonymous identity with its sessions. Full instructions are on the <a href="../account-deletion/">Account &amp; Data Deletion</a> page.</li>
+          <li><strong>If you can't use the app</strong> (for example, you deleted it or changed phones), on either platform: email <a href="mailto:privacy@sortverse.site">privacy@sortverse.site</a> with the subject “SORTVERSE Arena deletion request”. The <a href="../account-deletion/">Account &amp; Data Deletion</a> page lists the details to include and how we verify requests.</li>
           <li><strong>Game data on your device:</strong> delete the app, or clear its storage in your phone's settings.</li>
+          <li><strong>Advertising identifiers:</strong> on iPhone, change the tracking permission in <strong>Settings → Privacy &amp; Security → Tracking</strong>; on Android, delete your advertising ID in your phone's settings.</li>
           <li><strong>Ad consent:</strong> change it at any time in <strong>Settings → Privacy options</strong> (shown where it applies). For data Google holds, see <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google's information</a>.</li>
         </ul>
 
@@ -299,10 +316,10 @@
 
         <h2 id="transfers">13. International processing</h2>
         <ul>
-          <li><strong>Arena:</strong> stored by Supabase in the European Union (Frankfurt, Germany). Supabase, Inc. is based in the United States; its privacy policy describes how it handles data.</li>
+          <li><strong>Arena (iPhone and Android):</strong> stored by Supabase in the European Union (Frankfurt, Germany). Supabase, Inc. is based in the United States; its privacy policy describes how it handles data.</li>
           <li><strong>The developer:</strong> we operate and moderate the Arena from Morocco, so Arena data is accessed from Morocco.</li>
-          <li><strong>Apple (App Attest):</strong> may process data in the United States and other countries, under the safeguards described in its policy.</li>
-          <li><strong>Google, Vercel and Namecheap:</strong> each may process data in the United States and other countries, under the safeguards described in their policies.</li>
+          <li><strong>Apple (App Attest, iPhone only):</strong> may process data in the United States and other countries, under the safeguards described in its policy.</li>
+          <li><strong>Google (AdMob, its consent tool, Play Integrity and Google Play), Vercel and Namecheap:</strong> each may process data in the United States and other countries, under the safeguards described in their policies.</li>
         </ul>
 
         <h2 id="security">14. Security</h2>
@@ -325,7 +342,7 @@
             <img src="../assets/images/sortverse-icon-256.webp" alt="" width="40" height="40">
             <span>SORTVERSE</span>
           </a>
-          <p style="margin-top:12px">A colorful ball-sort puzzle adventure for iPhone. Coming soon to the App Store.</p>
+          <p style="margin-top:12px">A colorful ball-sort puzzle adventure for iPhone and Android. Coming soon to the App Store and Google Play.</p>
         </div>
         <nav aria-label="Game">
           <h2>Game</h2>
@@ -344,7 +361,7 @@
           </ul>
         </nav>
       </div>
-      <p class="fine-print">© 2026 Saad El Fadil. SORTVERSE is made by Saad El Fadil, an independent developer in Morocco. Platform: iPhone (coming soon to the App Store). Google Play is a trademark of Google LLC. App Store is a service mark of Apple Inc.</p>
+      <p class="fine-print">© 2026 Saad El Fadil. SORTVERSE is made by Saad El Fadil, an independent developer in Morocco. Platforms: iPhone and Android (coming soon to the App Store and Google Play). Google Play is a trademark of Google LLC. App Store is a service mark of Apple Inc.</p>
     </div>
   </footer>
 </body>
